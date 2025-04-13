@@ -1,0 +1,64 @@
+<div class="contact-section py-5" data-aos="fade-up">
+    <div class="container">
+      <h2 class="section-title text-white text-center mb-4">Contact Me</h2>
+  
+      <form (ngSubmit)="sendEmail(contactForm)" #contactForm="ngForm" class="contact-form card shadow-lg p-4 mx-auto" novalidate>
+        <!-- Name Field -->
+        <div class="mb-3">
+          <label class="form-label fw-bold text-dark">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            name="from_name"
+            [(ngModel)]="form.name"
+            required
+            #name="ngModel"
+          />
+          <div *ngIf="name.invalid && name.touched" class="text-danger mt-1">
+            Name is required.
+          </div>
+        </div>
+  
+        <!-- Email Field -->
+        <div class="mb-3">
+          <label class="form-label fw-bold text-dark">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            name="from_email"
+            [(ngModel)]="form.email"
+            required
+            email
+            #email="ngModel"
+          />
+          <div *ngIf="email.invalid && email.touched" class="text-danger mt-1">
+            <div *ngIf="email.errors?.['required']">Email is required.</div>
+            <div *ngIf="email.errors?.['email']">Please enter a valid email.</div>
+          </div>
+        </div>
+  
+        <!-- Message Field -->
+        <div class="mb-3">
+          <label class="form-label fw-bold text-dark">Message</label>
+          <textarea
+            class="form-control"
+            rows="4"
+            name="message"
+            [(ngModel)]="form.message"
+            required
+            #message="ngModel"
+          ></textarea>
+          <div *ngIf="message.invalid && message.touched" class="text-danger mt-1">
+            Message is required.
+          </div>
+        </div>
+  
+        <button type="submit" class="btn btn-primary w-100" [disabled]="contactForm.invalid">Send</button>
+      </form>
+  
+      <div *ngIf="success" class="alert alert-success mt-3 text-center">
+        Message sent successfully!
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,14 @@
+<div class="education-section py-5" data-aos="fade-up">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+  
+      <div class="card education-card mb-4" *ngFor="let education of educationData">
+        <div class="card-body">
+          <h4 class="card-title">{{ education.degree }}</h4>
+          <h5 class="card-subtitle mb-2 text-muted">{{ education.institution }}</h5>
+          <p>{{ education.year }} | Percentage/CGPA: {{ education.percentage }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  

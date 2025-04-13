@@ -1,0 +1,21 @@
+<div class="projects-section py-5">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+  
+      <div class="card project-card mb-4" *ngFor="let project of projects">
+        <div class="card-body">
+          <h5 class="card-title">{{ project.name }}</h5>
+          <p>{{ project.description }}</p>
+  
+          <div *ngIf="project.details">
+            <p><strong>Details:</strong> {{ project.details }}</p>
+          </div>
+  
+          <div *ngIf="project.technologies">
+            <p><strong>Technologies:</strong> {{ project.technologies }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

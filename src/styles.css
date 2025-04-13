@@ -1,1 +1,349 @@
-/* You can add global styles to this file, and also import other style files */
+/* .about-card {
+    background: #ffffff;
+    border-left: 5px solid #0d6efd;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .about-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .about-text {
+    font-size: 1rem;
+    color: #343a40;
+    line-height: 1.7;
+  }
+  
+  .bi-person-circle {
+    color: #0d6efd;
+  }
+
+*/
+
+/* About Section Background (same as Skills) */
+.about-section {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    padding: 3rem 0;
+  }
+  
+  /* Card Styling */
+  .about-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+  }
+  
+  /* Reuse section title style */
+  .section-title {
+    color: #2c3e50;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* About Text */
+  .about-text {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.7;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+
+
+.skills-section {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    padding: 3rem 0;
+  }
+  
+  /* Section Title */
+  .section-title {
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Category Heading */
+  .category-heading {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.75rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Card Style */
+  .skill-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+  }
+  
+  /* Skill Badge Style */
+  .skill-badge {
+    background: #f1f1f1;
+    color: #333;
+    padding: 8px 14px;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+    cursor: default;
+  }
+  
+  .skill-badge:hover {
+    background: #2575fc;
+    color: #fff;
+    transform: scale(1.05);
+  }
+  
+  /* Profile Section Background (same as Skills & About) */
+.profile-section {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    padding: 3rem 0;
+  }
+  
+  /* Profile Text Styling */
+  .profile-section h1,
+  .profile-section p {
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .profile-section .btn-outline-light {
+    border-color: #ffffff;
+    color: #ffffff;
+    transition: all 0.3s;
+  }
+  
+  .profile-section .btn-outline-light:hover {
+    background-color: #ffffff;
+    color: #2575fc;
+  }
+  
+  /* Social Icon Styling */
+  .profile-section .fs-4 {
+    color: #ffffff;
+    transition: all 0.3s;
+  }
+  
+  .profile-section .fs-4:hover {
+    color: #2575fc;
+  }
+  
+
+  /* Projects Section Background (same gradient) */
+.projects-section {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    padding: 3rem 0;
+  }
+  
+  /* Section Title */
+  .section-title {
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Card Styling */
+  .project-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Card Title */
+  .project-card .card-title {
+    font-size: 1.6rem;
+    color: #2575fc;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Card Body Text */
+  .project-card .card-body {
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Card Description */
+  .project-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  /* Hover Effect on the Project Cards */
+  .project-card:hover .card-title {
+    color: #6a11cb;
+  }
+  
+
+  /* Experience Section Background (same gradient) */
+.experience-section {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    padding: 3rem 0;
+  }
+  
+  /* Section Title */
+  .section-title {
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Card Styling */
+  .experience-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Card Title */
+  .experience-card .card-title {
+    font-size: 1.5rem;
+    color: #2575fc;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Card Body Text */
+  .experience-card .card-body {
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Card Description */
+  .experience-card p,
+  .experience-card ul {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  /* Hover Effect on the Experience Card Titles */
+  .experience-card:hover .card-title {
+    color: #6a11cb;
+  }
+  
+
+  /* Education Section Background (same gradient) */
+.education-section {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    padding: 3rem 0;
+  }
+  
+  /* Section Title */
+  .section-title {
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Card Styling */
+  .education-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .education-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Card Title */
+  .education-card .card-title {
+    font-size: 1.5rem;
+    color: #2575fc;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Card Body Text */
+  .education-card .card-body {
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Card Description */
+  .education-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  /* Hover Effect on the Education Card Titles */
+  .education-card:hover .card-title {
+    color: #6a11cb;
+  }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+  }
+  h2 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .container {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  footer {
+    margin-top: 0;  
+    padding-top: 0;
+  }
+  html, body {
+    height: 100%;
+  }
+  
+  app-root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  router-outlet + * {
+    flex: 1;
+  }
+  footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+  }
+      

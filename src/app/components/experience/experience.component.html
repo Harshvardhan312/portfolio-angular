@@ -1,0 +1,18 @@
+<div class="experience-section py-5" data-aos="fade-up">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+  
+      <div class="card experience-card mb-4" *ngFor="let experience of experienceData">
+        <div class="card-body">
+          <h4 class="card-title">{{ experience.title }}</h4>
+          <h5 class="card-subtitle mb-2 text-muted">{{ experience.role }}</h5>
+          <p><strong>{{ experience.company }}</strong> | {{ experience.date }}, {{ experience.location }}</p>
+  
+          <ul>
+            <li *ngFor="let item of experience.description">{{ item }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  

@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
+import { environment } from 'src/environments/environment';
+
 
 @Component({
   selector: 'app-contact',
@@ -17,9 +19,13 @@ export class ContactComponent {
   success = false;
 
   sendEmail(contactForm: NgForm) {
-    const serviceID = 'service_lfsdp3f';
-    const templateID = 'template_j20ry9r';
-    const userID = 'AlxNMjdn4bhu4Mqbn';
+
+
+    const serviceID = environment.emailServiceID;
+    const templateID = environment.emailTemplateID;
+    const userID = environment.emailPublicKey;
+    
+    
 
     const templateParams = {
       from_name: this.form.name,
